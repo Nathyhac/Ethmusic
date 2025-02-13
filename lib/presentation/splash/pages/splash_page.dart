@@ -13,7 +13,6 @@ class Splashpage extends StatefulWidget {
 class _SplashpageState extends State<Splashpage> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     redirect();
   }

@@ -30,6 +30,9 @@ class GetStartedPage extends StatelessWidget {
                       fontSize: 20,
                       color: Colors.white),
                 ),
+                SizedBox(
+                  height: 21,
+                ),
                 Text(
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                   style: TextStyle(
@@ -43,7 +46,6 @@ class GetStartedPage extends StatelessWidget {
             ),
           ),
           Container(
-            // ignore: deprecated_member_use
             color: Colors.black.withOpacity(0.15),
           )
         ],
