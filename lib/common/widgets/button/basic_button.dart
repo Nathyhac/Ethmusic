@@ -3,10 +3,16 @@ import 'package:flutter/material.dart';
 class BasicButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String title;
-  const BasicButton({required this.onPressed, required this.title, super.key});
+  final double? height;
+  const BasicButton(
+      {required this.onPressed, this.height, required this.title, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: onPressed, child: Text(title));
+    return ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+            minimumSize: Size.fromHeight(height ?? 80)),
+        child: Text(title));
   }
 }
